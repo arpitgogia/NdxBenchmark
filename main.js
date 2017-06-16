@@ -22,6 +22,9 @@ var csvStream = csv()
         index.search("times");
         end = new Date();
         console.log(end - start);
-
+        start = new Date();
+        console.log(index.search("owner of Brooklyn-based Rick's picks"));
+        end = new Date();
+        console.log(end - start);
     });
 stream.pipe(csvStream);
